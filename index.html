@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="site-container">
-        
         <header class="site-header">
             <div class="header-inner">
                 <p class="brand">VYZEA</p>
@@ -24,47 +22,43 @@
                     <a href="#">CONTATO</a>
                 </nav>
                 <button class="menu-icon">
-                    <svg width="80" height="40" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="2" fill="black"/><rect y="5" width="20" height="2" fill="black"/><rect y="10" width="20" height="2" fill="black"/></svg>
+                    <svg width="35" height="15" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="2" fill="black"/><rect y="5" width="20" height="2" fill="black"/><rect y="10" width="20" height="2" fill="black"/></svg>
                 </button>
             </div>
         </header>
 
-        <main class="editorial-content">
-            
+        <main class="editorial-content" id="content-area">
             <section class="visual-column">
                 <div class="hero-image-container">
-                    <img src="capa.png" alt="Vico Magistretti e cadeira Carimate" class="hero-image">
+                    <img id="main-img" src="capa.png" alt="Capa" class="hero-image">
                 </div>
                 
                 <div class="visual-controls">
                     <div class="visual-line"></div>
                     <div class="thumbnails">
-                        <img src="thumb1.png" alt="Miniatura 1">
-                        <img src="thumb2.png" alt="Miniatura 2">
-                        <img src="thumb3.jpg" alt="Miniatura 3">
-                        <img src="thumb1.png" alt="Miniatura 4 (repetida p/ exemplo)">
+                        <img src="thumb1.png" alt="Miniatura 1" onclick="mudarConteudo(1)">
+                        <img src="thumb2.png" alt="Miniatura 2" onclick="mudarConteudo(2)">
+                        <img src="thumb3.jpg" alt="Miniatura 3" onclick="mudarConteudo(3)">
                     </div>
                 </div>
             </section>
             
             <section class="text-column">
                 <div class="editorial-titles">
-                    <h2><span class="first-part">Levi's alerta sobre impacto ambiental</span>
-                    <h2><span class="second-part">do consumo de roupas</span>
+                    <h2><span id="txt-titulo1" class="first-part">Levi's alerta sobre impacto ambiental</span></h2>
+                    <h2><span id="txt-titulo2" class="second-part">do consumo de roupas</span></h2>
                 </div>
                 
                 <div class="featured-detail">
-                    <img src="vertical.png" alt="Detalhe da cadeira vertical">
+                    <img id="detail-img" src="vertical.png" alt="Detalhe">
                 </div>
                 
                 <div class="editorial-text-content">
-                    <p class="body-text">A marca norte-americana Levi’s está se concentrando no tema da sustentabilidade em uma campanha global que inclui o jogador de futebol inglês Marcus Rashford juntamente com a modelo e designer brasileira Yeza Rabelo.</p>
-
+                    <p id="txt-corpo" class="body-text">A marca norte-americana Levi’s está se concentrando no tema da sustentabilidade em uma campanha global que inclui o jogador de futebol inglês Marcus Rashford juntamente com a modelo e designer brasileira Yeza Rabelo.</p>
+                </div>
             </section>
-            
         </main>
-        
     </div>
 
+    <script src="script.js"></script>
 </body>
-</html>
