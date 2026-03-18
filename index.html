@@ -3,34 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moda & Cultura | Editorial</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>Claire &middot; Italian Modernist</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <p class="brand-sub">Curadoria de Estilo</p>
-        <h1>MODA & CULTURA</h1>
-        <nav>
-            <a href="#">Coleções</a>
-            <a href="#">Ensaios</a>
-            <a href="#">Sobre</a>
-        </nav>
-    </header>
+    <div class="site-container">
+        
+        <header class="site-header">
+            <div class="header-inner">
+                <p class="brand">VYZEA'</p>
+                <nav class="nav-links">
+                    <a href="#">QUEM SOMOS</a>
+                    <a href="#">VOZES</a>
+                    <a href="#">CONTATO</a>
+                </nav>
+                <button class="menu-icon">
+                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="2" fill="black"/><rect y="5" width="20" height="2" fill="black"/><rect y="10" width="20" height="2" fill="black"/></svg>
+                </button>
+            </div>
+        </header>
 
-    <main>
-        <section class="hero">
-            <div class="line"></div>
-            <h2>A estética do silêncio</h2>
-            <p>Explorando a intersecção entre o design minimalista e o comportamento contemporâneo.</p>
-            <a href="#" class="read-more">Leia o ensaio</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 — Edição Digital</p>
-    </footer>
+        <main class="editorial-content">
+            
+            <section class="visual-column">
+                <div class="hero-image-container">
+                    <img src="capa.png" alt="Vico Magistretti e cadeira Carimate" class="hero-image">
+                </div>
+                
+                <div class="visual-controls">
+                    <div class="visual-line"></div>
+                    <div class="thumbnails">
+                        <img src="thumb1.png" alt="Miniatura 1">
+                        <img src="thumb2.png" alt="Miniatura 2">
+                        <img src="thumb3.jpg" alt="Miniatura 3">
+                        <img src="thumb1.png" alt="Miniatura 4 (repetida p/ exemplo)">
+                    </div>
+                </div>
+            </section>
+            
+            <section class="text-column">
+                <div class="editorial-titles">
+                    <h2><span class="first-part">Levi's alerta</span> <span class="second-part">sobre impacto ambiental</span></h2>
+                    <h2><span class="third-part">do consumo de roupas</span>
+                </div>
+                
+                <div class="featured-detail">
+                    <img src="vertical.png" alt="Detalhe da cadeira vertical">
+                </div>
+                
+                <div class="editorial-text-content">
+                    <p class="body-text">A marca norte-americana Levi’s está se concentrando no tema da sustentabilidade em uma campanha global que inclui o jogador de futebol inglês Marcus Rashford juntamente com a modelo e designer brasileira Yeza Rabelo.</p>
+                }
+            </section>
+            
+        </main>
+        
+    </div>
 
 </body>
 </html>
