@@ -15,7 +15,7 @@ body, html {
     background-color: #ffffff;
     max-width: 1300px;
     margin: 50px auto;
-    min-height: calc(100vh - 100px);
+    min-height: calc(160vh - 160px);
     display: flex;
     flex-direction: column;
     box-shadow: 0 10px 40px rgba(0,0,0,0.05); /* Sombra suave para flutuar */
@@ -23,7 +23,7 @@ body, html {
 
 /* --- Cabeçalho Editorial --- */
 .site-header {
-    padding: 40px 60px 20px;
+    padding: 80px 100px 40px;
 }
 
 .header-inner {
@@ -33,9 +33,9 @@ body, html {
 }
 
 .brand {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'GFS Didot', Regular 400;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 60px;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
@@ -187,7 +187,7 @@ body, html {
     transform: rotate(-90deg) translateY(-50%);
     transform-origin: left top;
     font-family: 'Montserrat', sans-serif;
-    font-size: 7px;
+    font-size: 12px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #888;
