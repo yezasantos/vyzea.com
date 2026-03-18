@@ -1,28 +1,106 @@
-/* Configurações gerais do corpo da página */
+/* Configurações Globais */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6; /* Um cinza bem clarinho */
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 80px 20px 40px;
+    letter-spacing: 2px;
+}
+
+.brand-sub {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
     margin: 0;
 }
 
-/* Estilizando o título */
-h1 {
-    color: #2c3e50;
-    border-bottom: 3px solid #3498db; /* Linha azul embaixo */
-    padding-bottom: 10px;
+nav {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
 }
 
-/* Estilizando o parágrafo */
-p {
-    font-size: 1.2rem;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave */
+nav a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #888;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.line {
+    width: 40px;
+    height: 1px;
+    background: #1a1a1a;
+    margin: 0 auto 30px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 500px;
+    margin: 0 auto 40px;
+    font-weight: 300;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+}
+
+.read-more:hover {
+    color: #888;
+    border-color: #888;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 100px 20px 40px;
+    font-size: 10px;
+    color: #aaa;
+    text-transform: uppercase;
 }
