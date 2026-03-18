@@ -170,7 +170,7 @@ body, html {
 .featured-detail {
     margin-bottom: 50px;
     position: relative;
-    max-width: 100px; /* Controla o tamanho da foto vertical */
+    max-width: 200px; /* Controla o tamanho da foto vertical */
 }
 
 .featured-detail img {
