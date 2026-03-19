@@ -209,16 +209,3 @@ body, html {
     color: #555;
     line-height: 1.8;
 }
-
-#main-content {
-    transition: opacity 0.4s ease;
-}
-
-.thumbnails img {
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.thumbnails img:hover {
-    opacity: 0.7;
-}
