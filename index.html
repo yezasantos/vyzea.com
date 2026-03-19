@@ -29,36 +29,20 @@
     </header>
 
     <main class="editorial-content" id="main-content">
-        <section class="visual-column">
-            <div class="hero-image-container">
-                <img id="hero-img" src="capa.png" alt="Capa" class="hero-image">
-            </div>
-            
-            <div class="visual-controls">
-                <div class="visual-line"></div>
-                <div class="thumbnails">
-                    <img src="thumb1.png" onclick="atualizarPagina(0)">
-                    <img src="thumb2.png" onclick="atualizarPagina(1)">
-                    <img src="thumb3.jpg" onclick="atualizarPagina(2)">
-                </div>
-            </div>
-        </section>
-        
-        <section class="text-column">
-            <div class="editorial-titles">
-                <h2 id="titulo-principal">Levi's alerta sobre o impacto ambiental</h2>
-            </div>
-            
-            <div class="featured-detail">
-                <img id="detail-img" src="vertical.png" alt="Detalhe">
-            </div>
-
-            <div class="editorial-text-content">
-                <p id="texto-corpo" class="body-text">A marca norte-americana Levi’s está se concentrando no tema da sustentabilidade em uma campanha global...</p>
-            </div>
-        </section>
-    </main>
-</div>
+       <section class="visual-column">
+    <div class="hero-image-container">
+        <img id="main-img" src="capa.png" alt="Capa Principal" class="hero-image">
+    </div>
+    
+    <div class="visual-controls">
+        <div class="visual-line"></div>
+        <div class="thumbnails">
+            <img src="thumb1.png" alt="Miniatura 1" onclick="trocarImagem('capa.png')">
+            <img src="thumb2.png" alt="Miniatura 2" onclick="trocarImagem('thumb2.png')">
+            <img src="thumb3.jpg" alt="Miniatura 3" onclick="trocarImagem('thumb3.jpg')">
+        </div>
+    </div>
+</section>
 
 <script src="script.js"></script>
             
