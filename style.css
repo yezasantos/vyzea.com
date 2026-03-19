@@ -188,6 +188,23 @@ body, html {
     font-family: 'GFS Didot', sans-serif;
     font-size: 12px;
     letter-spacing: 1.1px;
+
+    /* Faz a imagem principal ter uma transição suave */
+#main-img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Estilo para as miniaturas */
+.thumbnails img {
+    cursor: pointer; /* Transforma o mouse em "mãozinha" */
+    transition: transform 0.2s, filter 0.2s;
+    filter: grayscale(30%); /* Elas ficam levemente cinzas */
+}
+
+.thumbnails img:hover {
+    transform: scale(1.05); /* Aumentam levemente ao passar o mouse */
+    filter: grayscale(0%); /* Ganham cor total no foco */
+}
     font-weight: 400;
     color: #555;
     line-height: 1.8;
