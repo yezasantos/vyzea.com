@@ -32,19 +32,21 @@
         <main class="editorial-content">
             
             <section class="visual-column">
-                <div class="hero-image-container">
-                    <img src="capa.png" alt="Vico Magistretti e cadeira Carimate" class="hero-image">
-                </div>
-                
-                <div class="visual-controls">
-                    <div class="visual-line"></div>
-                    <div class="thumbnails">
-                        <img src="thumb1.png" alt="Miniatura 1">
-                        <img src="thumb2.png" alt="Miniatura 2">
-                        <img src="thumb3.jpg" alt="Miniatura 3">
-                    </div>
-                </div>
-            </section>
+    <div class="hero-image-container">
+        <img id="main-img" src="capa.png" alt="Capa Principal" class="hero-image">
+    </div>
+    
+    <div class="visual-controls">
+        <div class="visual-line"></div>
+        <div class="thumbnails">
+            <img src="thumb1.png" alt="Miniatura 1" onclick="trocarImagem('capa.png')">
+            <img src="thumb2.png" alt="Miniatura 2" onclick="trocarImagem('thumb2.png')">
+            <img src="thumb3.jpg" alt="Miniatura 3" onclick="trocarImagem('thumb3.jpg')">
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
             
             <section class="text-column">
                 <div class="editorial-titles">
