@@ -1,0 +1,194 @@
+/* --- Estilos Globais e Reset --- */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* O fundo cinza claro externo */
+    background-color: #f7f7f7;
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* O container branco que moldura o conteúdo (semelhante ao papel na imagem) */
+.site-container {
+    background-color: #ffffff;
+    max-width: 1300px;
+    margin: 50px auto;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05); /* Sombra suave para flutuar */
+}
+
+/* --- Cabeçalho Editorial --- */
+.site-header {
+    padding: 40px 60px 20px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-family: 'GFS Didot', serif;
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #888;
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* --- Layout Principal --- */
+.editorial-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+    gap: 0;
+    padding: 0 60px 60px;
+    align-items: start;
+}
+
+/* --- Coluna da Esquerda (Imagens) --- */
+.visual-column {
+    position: relative;
+    padding-right: 40px; /* Afastamento da coluna de texto */
+}
+
+.hero-image-container {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 110%; /* Cria uma proporção de imagem alta */
+}
+
+.hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top; /* Foca no rosto/topo se necessário */
+}
+
+/* Controles visuais (linha e thumbnails) */
+.visual-controls {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visual-line {
+    width: 30px;
+    height: 1px;
+    background-color: #888;
+    margin-bottom: 30px;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 15px;
+}
+
+.thumbnails img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 1px solid #eee;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.thumbnails img:hover {
+    border-color: #ccc;
+    transform: translateY(-3px);
+}
+
+/* --- Coluna da Direita (Tipografia Avançada) --- */
+.text-column {
+    padding-left: 40px; /* Afastamento da coluna de imagens */
+}
+
+/* Tipografia avançada para imitar o estilo serifado com ligaturas */
+.editorial-titles {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.editorial-titles h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 0;
+    position: relative;
+}
+
+/* Recria o efeito de alinhamento e ligaturas */
+.first-part, .second-part, .third-part, .fourth-part {
+    display: inline-block;
+}
+
+.first-part { margin-right: 15px; }
+.second-part { font-style: italic; font-weight: 400; }
+.third-part { display: block; margin-top: 10px; }
+.fourth-part { display: block; margin-left: -5px; }
+
+/* Adiciona o ponto sutil na letra 's' se possível (técnica avançada de fonte) */
+.fourth-part {
+    font-feature-settings: "liga" 1, "dlig" 1; /* Ativa ligaturas discricionárias */
+}
+
+/* Bloco vertical de detalhe */
+.featured-detail {
+    margin-bottom: 50px;
+    position: relative;
+    max-width: 300px; /* Controla o tamanho da foto vertical */
+}
+
+.featured-detail img {
+    width: 100%;
+    border: 1px solid #f7f7f7;
+}
+
+/* Texto de Corpo Editorial */
+.editorial-text-content {
+    max-width: 400px;
+    margin-top: 40px;
+}
+
+.body-text {
+    font-family: 'GFS Didot', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.1px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.8;
+}
