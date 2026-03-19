@@ -226,53 +226,113 @@ body, html {
 }
 
 /* --- AJUSTES PARA MOBILE (Telas menores que 768px) --- */
+/* Essa linha garante que as regras abaixo SÓ funcionem no celular */
 @media (max-width: 768px) {
     
-    /* Faz a caixa de texto ficar preta e ocupar a tela toda */
-    .featured-box {
-        background-color: #000000; /* Fundo preto */
-        color: #ffffff; /* Texto branco */
-        padding: 60px 30px !important;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
+    /* 1. Remove margens externas e sombras para preencher a tela do celular */
+    .site-container {
+        margin: 0;
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    /* 2. Cabeçalho: Centraliza o logo e slogan como no print */
+    .site-header {
+        padding: 30px 20px;
+    }
+
+    .header-inner {
+        flex-direction: column; 
         align-items: center;
+        text-align: center;
     }
 
-    /* Estilo do "EM DESTAQUE" */
-    .section-label {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-        letter-spacing: 3px;
-        margin-bottom: 30px;
-        color: #ffffff;
+    .brand {
+        font-size: 3.5rem !important; /* Logo grande e imponente */
+        letter-spacing: 8px;
+        margin-bottom: 5px;
     }
 
-    /* Ajusta os títulos para ficarem brancos ou levemente beges como na foto */
-    .editorial-titles h2 span {
-        color: #d4bdae; /* Cor bege suave para o título, conforme a foto */
-        font-size: 1.8rem;
-        line-height: 1.2;
+    /* Slogan que só aparece ou se destaca no mobile */
+    .tagline-mobile {
+        display: block;
+        font-size: 11px;
+        text-transform: none;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
     }
 
-    /* Estilo do link "Saiba mais" */
-    .cta-link {
-        margin-top: 40px;
-        color: #ffffff;
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        border-bottom: 1px solid #ffffff;
-        padding-bottom: 5px;
-        font-weight: 300;
+    /* 3. Menu: Ícone vai para o canto superior direito */
+    .menu-icon {
+        position: absolute;
+        right: 20px;
+        top: 25px;
     }
 
-    /* Ocultar elementos que não combinam com esse bloco preto no mobile */
-    .featured-detail {
+    .nav-links {
+        display: none; /* Esconde links de texto para limpar o visual */
+    }
+
+    /* 4. Imagem: Ocupa a largura total da tela (Full Width) */
+    .editorial-content {
+        display: flex;
+        flex-direction: column; /* Empilha: Imagem em cima, texto embaixo */
+        padding: 0;
+    }
+
+    .visual-column {
+        padding: 0;
+        order: 1; /* Garante que a imagem venha primeiro */
+    }
+
+    .hero-image-container {
+        width: 100vw;
+        margin: 0;
+    }
+
+    /* Esconde as miniaturas e linhas no mobile para foco total na capa */
+    .visual-controls {
         display: none;
     }
-    
-    .body-text {
-        display: none; /* Geralmente em destaque mobile, usa-se apenas o título e o link */
+
+    /* 5. Bloco de Texto: Fundo preto e texto "Saiba Mais" (Estilo Wix/Editorial) */
+    .text-column {
+        order: 2; /* Vem depois da imagem */
+        background-color: #000000; /* Fundo preto do seu último print */
+        color: #ffffff;
+        padding: 60px 30px;
+        text-align: center;
+        margin: 0;
+    }
+
+    /* Texto "EM DESTAQUE" */
+    .text-column::before {
+        content: "EM DESTAQUE";
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+    }
+
+    .editorial-titles h2 span {
+        color: #d4bdae !important; /* Cor bege luxo para o título */
+        font-size: 1.8rem;
+    }
+
+    /* Transforma o parágrafo ou adiciona o link Saiba Mais */
+    .editorial-text-content::after {
+        content: "Saiba mais";
+        display: block;
+        margin-top: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    /* Esconde detalhes que poluem o mobile */
+    .featured-detail, .body-text {
+        display: none; 
     }
 }
