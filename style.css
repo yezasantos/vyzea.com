@@ -207,3 +207,20 @@ body, html {
     color: #555;
     line-height: 1.8;
 }
+
+/* Suaviza a troca de conteúdo */
+#content-area {
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* Indica que as miniaturas são clicáveis e dá um efeito de zoom */
+.thumbnails img {
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(40%);
+}
+
+.thumbnails img:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
