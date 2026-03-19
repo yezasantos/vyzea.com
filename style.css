@@ -15,7 +15,7 @@ body, html {
     background-color: #ffffff;
     max-width: 1300px;
     margin: 50px auto;
-    min-height: calc(160vh - 160px);
+    min-height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     box-shadow: 0 10px 40px rgba(0,0,0,0.05); /* Sombra suave para flutuar */
@@ -23,7 +23,7 @@ body, html {
 
 /* --- Cabeçalho Editorial --- */
 .site-header {
-    padding: 80px 100px 40px;
+    padding: 40px 60px 20px;
 }
 
 .header-inner {
@@ -33,9 +33,9 @@ body, html {
 }
 
 .brand {
-    font-family: 'GFS Didot', serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 60px;
+    font-size: 13px;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
@@ -49,7 +49,7 @@ body, html {
 .nav-links a {
     text-decoration: none;
     color: #1a1a1a;
-    font-size: 25px;
+    font-size: 10px;
     letter-spacing: 1.5px;
     font-weight: 400;
     text-transform: uppercase;
@@ -170,7 +170,7 @@ body, html {
 .featured-detail {
     margin-bottom: 50px;
     position: relative;
-    max-width: 200px; /* Controla o tamanho da foto vertical */
+    max-width: 300px; /* Controla o tamanho da foto vertical */
 }
 
 .featured-detail img {
@@ -180,14 +180,14 @@ body, html {
 
 /* Pequeno texto vertical para o detalhe */
 .featured-detail::before {
-    content: "Hailey Bieber";
+    content: "THE CARIMATE CHAIR";
     position: absolute;
     left: -20px;
     top: 50%;
     transform: rotate(-90deg) translateY(-50%);
     transform-origin: left top;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 7px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #888;
@@ -197,6 +197,16 @@ body, html {
 .editorial-text-content {
     max-width: 400px;
     margin-top: 40px;
+}
+
+.body-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.1px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.8;
+}
 }
 
 .body-text {
