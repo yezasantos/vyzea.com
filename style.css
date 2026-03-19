@@ -224,3 +224,65 @@ body, html {
     transform: scale(1.05);
     filter: grayscale(0%);
 }
+
+/* --- AJUSTES PARA MOBILE (Telas menores que 768px) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Remove a margem externa cinza e deixa o site ocupar a tela toda */
+    .site-container {
+        margin: 0;
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    /* 2. Transforma as duas colunas em UMA única coluna vertical */
+    .editorial-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 40px; /* Diminui o respiro lateral no celular */
+    }
+
+    /* 3. Ajusta o cabeçalho (Header) */
+    .site-header {
+        padding: 30px 20px;
+    }
+    
+    .nav-links {
+        display: none; /* Esconde os links de menu para não poluir (comum em mobile) */
+    }
+
+    /* 4. Ajusta as imagens e textos */
+    .visual-column {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .text-column {
+        padding-left: 0;
+    }
+
+    /* 5. Diminui o tamanho das fontes para caber na tela do celular */
+    .editorial-titles h2 {
+        font-size: 2.2rem; /* Título menor no mobile */
+    }
+
+    .brand {
+        font-size: 16px;
+    }
+
+    /* 6. Ajusta a imagem de detalhe vertical */
+    .featured-detail {
+        max-width: 100%; /* Ocupa a largura total disponível */
+        margin-top: 30px;
+    }
+    
+    .featured-detail::before {
+        display: none; /* Esconde o texto vertical para ganhar espaço */
+    }
+
+    /* 7. Facilita o clique nas miniaturas */
+    .thumbnails img {
+        width: 70px;
+        height: 70px;
+    }
+}
