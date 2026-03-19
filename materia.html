@@ -151,3 +151,28 @@
 
 </body>
 </html>
+
+/* Moldura da Imagem Principal */
+.hero-frame {
+    width: 100%;
+    height: 450px; /* Mantém a altura estilo "faixa" da referência */
+    overflow: hidden;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-bottom: 15px;
+}
+
+.hero-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem preencher o espaço */
+    
+    /* CENTRALIZAR NO ROSTO: 
+       O primeiro valor é horizontal (center), o segundo é vertical (top). 
+       Se o rosto estiver mais para cima na foto original, use 'top'. 
+       Se quiser um ajuste fino, pode usar porcentagem, ex: 'center 20%' */
+    object-position: center top; 
+    
+    /* COR NORMAL: Removi o filter: grayscale que tínhamos colocado antes */
+    filter: none; 
+}
