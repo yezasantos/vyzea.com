@@ -117,8 +117,8 @@ body, html {
 }
 
 .thumbnails img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border: 1px solid #eee;
     padding: 5px;
