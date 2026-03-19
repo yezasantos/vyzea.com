@@ -1,0 +1,102 @@
+/* Layout Geral */
+.article-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 120px 20px 60px; /* Espaço para o header fixo */
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+
+/* Título e Intro */
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.article-main-title {
+    font-size: 3.5rem;
+    line-height: 0.9;
+    font-weight: 800;
+    margin: 0;
+}
+
+.outline-text {
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 0 15px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    max-width: 400px;
+    font-size: 0.85rem;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+/* Imagem Centralizada e "Cortada" */
+.hero-crop {
+    width: 100%;
+    height: 350px; /* Altura fixa para dar o efeito da foto da referência */
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.hero-crop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+    filter: grayscale(100%); /* Efeito P&B opcional */
+}
+
+/* Meta dados (Sede, Fundadores) */
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.meta-item small {
+    color: #888;
+    display: block;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+/* Texto da Matéria */
+.article-body {
+    column-count: 1; /* Você pode mudar para 2 se quiser estilo jornal */
+    padding-top: 20px;
+}
+
+.body-copy {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.body-copy.bold {
+    font-weight: 800;
+    text-transform: uppercase;
+}
