@@ -228,61 +228,51 @@ body, html {
 /* --- AJUSTES PARA MOBILE (Telas menores que 768px) --- */
 @media (max-width: 768px) {
     
-    /* 1. Remove a margem externa cinza e deixa o site ocupar a tela toda */
-    .site-container {
-        margin: 0;
-        max-width: 100%;
-        box-shadow: none;
-    }
-
-    /* 2. Transforma as duas colunas em UMA única coluna vertical */
-    .editorial-content {
+    /* Faz a caixa de texto ficar preta e ocupar a tela toda */
+    .featured-box {
+        background-color: #000000; /* Fundo preto */
+        color: #ffffff; /* Texto branco */
+        padding: 60px 30px !important;
+        text-align: center;
         display: flex;
         flex-direction: column;
-        padding: 0 20px 40px; /* Diminui o respiro lateral no celular */
+        align-items: center;
     }
 
-    /* 3. Ajusta o cabeçalho (Header) */
-    .site-header {
-        padding: 30px 20px;
-    }
-    
-    .nav-links {
-        display: none; /* Esconde os links de menu para não poluir (comum em mobile) */
-    }
-
-    /* 4. Ajusta as imagens e textos */
-    .visual-column {
-        padding-right: 0;
-        margin-bottom: 40px;
+    /* Estilo do "EM DESTAQUE" */
+    .section-label {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+        color: #ffffff;
     }
 
-    .text-column {
-        padding-left: 0;
+    /* Ajusta os títulos para ficarem brancos ou levemente beges como na foto */
+    .editorial-titles h2 span {
+        color: #d4bdae; /* Cor bege suave para o título, conforme a foto */
+        font-size: 1.8rem;
+        line-height: 1.2;
     }
 
-    /* 5. Diminui o tamanho das fontes para caber na tela do celular */
-    .editorial-titles h2 {
-        font-size: 2.2rem; /* Título menor no mobile */
-    }
-
-    .brand {
+    /* Estilo do link "Saiba mais" */
+    .cta-link {
+        margin-top: 40px;
+        color: #ffffff;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
         font-size: 16px;
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 5px;
+        font-weight: 300;
     }
 
-    /* 6. Ajusta a imagem de detalhe vertical */
+    /* Ocultar elementos que não combinam com esse bloco preto no mobile */
     .featured-detail {
-        max-width: 100%; /* Ocupa a largura total disponível */
-        margin-top: 30px;
+        display: none;
     }
     
-    .featured-detail::before {
-        display: none; /* Esconde o texto vertical para ganhar espaço */
-    }
-
-    /* 7. Facilita o clique nas miniaturas */
-    .thumbnails img {
-        width: 70px;
-        height: 70px;
+    .body-text {
+        display: none; /* Geralmente em destaque mobile, usa-se apenas o título e o link */
     }
 }
