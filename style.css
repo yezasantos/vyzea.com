@@ -49,7 +49,7 @@ body, html {
 .nav-links a {
     text-decoration: none;
     color: #1a1a1a;
-    font-size: 90px;
+    font-size: 40px;
     letter-spacing: 1.5px;
     font-weight: 400;
     text-transform: uppercase;
@@ -117,8 +117,8 @@ body, html {
 }
 
 .thumbnails img {
-    width: 120px;
-    height: 120px;
+    width: 108px;
+    height: 108px;
     object-fit: cover;
     border: 1px solid #eee;
     padding: 5px;
@@ -186,7 +186,7 @@ body, html {
 
 .body-text {
     font-family: 'GFS Didot', sans-serif;
-    font-size: 25px;
+    font-size: 12px;
     letter-spacing: 1.1px;
     font-weight: 400;
     color: #555;
