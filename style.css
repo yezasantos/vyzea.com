@@ -13,7 +13,7 @@ body, html {
 /* O container branco que moldura o conteúdo (semelhante ao papel na imagem) */
 .site-container {
     background-color: #ffffff;
-    max-width: 1300px;
+    max-width: 100px;
     margin: 50px auto;
     min-height: calc(120vh - 120px);
     display: flex;
@@ -33,9 +33,9 @@ body, html {
 }
 
 .brand {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'GFS Didot', serif;
     font-weight: 500;
-    font-size: 60px;
+    font-size: 40px;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
@@ -49,7 +49,7 @@ body, html {
 .nav-links a {
     text-decoration: none;
     color: #1a1a1a;
-    font-size: 40x;
+    font-size: 60x;
     letter-spacing: 1.5px;
     font-weight: 400;
     text-transform: uppercase;
