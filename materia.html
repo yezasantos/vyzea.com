@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VYZEA &middot; Matéria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <style>
+        /* Estilos específicos baseados na referência Margiela */
+        .article-body-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 120px 40px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .margiela-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .who-is-pill {
+            border: 1px solid #000;
+            border-radius: 50px;
+            padding: 5px 25px;
+            font-size: 1.8rem;
+            font-weight: 300;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .main-article-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 0.9;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .top-intro-text {
+            max-width: 400px;
+            font-size: 0.8rem;
+            line-height: 1.4;
+            text-align: justify;
+        }
+
+        /* Moldura da Imagem Principal */
+        .hero-frame {
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            margin-bottom: 15px;
+        }
+
+        .hero-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%); /* Estética da foto enviada */
+        }
+
+        /* Meta dados (Sede/Colaboradores) */
+        .article-metadata {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+        }
+
+        .meta-group span { color: #888; display: block; margin-bottom: 2px; }
+
+        .divider-line { border: 0; border-top: 1px solid #eee; margin-bottom: 40px; }
+
+        /* Texto da Matéria */
+        .main-text-content {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: justify;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .bold-intro { font-weight: 800; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <p class="brand">VYZEA</p>
+            <nav class="nav-links">
+                <a href="index.html">VOLTAR</a>
+                <a href="#">QUEM SOMOS</a>
+                <a href="#">VOZES</a>
+                <a href="#">CONTATO</a>
+            </nav>
+            <button class="menu-icon">
+                <svg width="40" height="25" viewBox="0 0 20 12" fill="none"><rect width="20" height="2" fill="black"/><rect y="5" width="20" height="2" fill="black"/><rect y="10" width="20" height="2" fill="black"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="article-body-container">
+        <div class="margiela-header">
+            <div>
+                <div class="who-is-pill">QUEM É</div>
+                <h1 class="main-article-title">LEVI'S <br> SUSTENTÁVEL?</h1>
+            </div>
+            <div class="top-intro-text">
+                A marca norte-americana Levi’s está se concentrando no tema da sustentabilidade em uma campanha global que inclui o jogador Marcus Rashford e a designer Yeza Rabelo.
+            </div>
+        </div>
+
+        <div class="hero-frame">
+            <img src="capa.png" alt="Impacto Ambiental">
+        </div>
+
+        <div class="article-metadata">
+            <div class="meta-group">
+                <span>Sede:</span>
+                <strong>SAN FRANCISCO / USA</strong>
+            </div>
+            <div class="meta-group">
+                <span>Colaboradores:</span>
+                <strong>MARCUS RASHFORD / YEZA RABELO</strong>
+            </div>
+        </div>
+
+        <hr class="divider-line">
+
+        <article class="main-text-content">
+            <p class="bold-intro">
+                LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM.
+            </p>
+            <p>
+                A sustentabilidade não é apenas uma tendência para a Levi's, mas uma necessidade urgente. A campanha destaca como o consumo consciente pode mudar o futuro da moda. Unindo a força do esporte com Marcus Rashford e a visão criativa de Yeza Rabelo, a marca propõe um novo olhar sobre as roupas que vestimos.
+            </p>
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </article>
+    </main>
+
+</body>
+</html>
