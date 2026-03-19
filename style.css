@@ -15,7 +15,7 @@ body, html {
     background-color: #ffffff;
     max-width: 100px;
     margin: 50px auto;
-    min-height: calc(120vh - 120px);
+    min-height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     box-shadow: 0 10px 40px rgba(0,0,0,0.05); /* Sombra suave para flutuar */
@@ -49,7 +49,7 @@ body, html {
 .nav-links a {
     text-decoration: none;
     color: #1a1a1a;
-    font-size: 60x;
+    font-size: 50x;
     letter-spacing: 1.5px;
     font-weight: 400;
     text-transform: uppercase;
