@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> <style>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
         /* Estilos específicos baseados na referência Margiela */
         .article-body-container {
             max-width: 1100px;
@@ -17,41 +18,46 @@
         }
 
         .margiela-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 30px;
+            /* Mudança: Removido o Flexbox para que os elementos empilhem verticalmente */
+            display: block; 
+            margin-bottom: 50px;
         }
 
         .who-is-pill {
             border: 1px solid #000;
             border-radius: 50px;
             padding: 5px 25px;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 300;
             display: inline-block;
-            margin-bottom: 5px;
+            /* Mudança: Aumentado o espaçamento para dar respiro ao título */
+            margin-bottom: 25px; 
+            text-transform: uppercase;
         }
 
         .main-article-title {
             font-size: 3.5rem;
             font-weight: 800;
-            line-height: 0.9;
+            line-height: 0.95;
             margin: 0;
             text-transform: uppercase;
+            max-width: 900px;
         }
 
         .top-intro-text {
-            max-width: 400px;
-            font-size: 0.8rem;
-            line-height: 1.4;
+            /* Mudança: Ajustado para ficar abaixo do título com espaçamento */
+            margin-top: 25px; 
+            max-width: 650px; /* Um pouco mais largo para acomodar a nova posição */
+            font-size: 0.9rem;
+            line-height: 1.5;
             text-align: justify;
+            color: #333;
         }
 
         /* Moldura da Imagem Principal */
         .hero-frame {
             width: 100%;
-            height: 450px;
+            height: 500px; /* Aumentado levemente para destacar o rosto */
             overflow: hidden;
             border-top: 1px solid #000;
             border-bottom: 1px solid #000;
@@ -62,7 +68,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: grayscale(100%); /* Estética da foto enviada */
+            /* Mudança: Removido o grayscale para ficar colorida */
+            filter: none; 
+            /* Mudança: Ajustado para focar na altura do rosto (top/20%) */
+            object-position: center 20%; 
         }
 
         /* Meta dados (Sede/Colaboradores) */
@@ -110,10 +119,9 @@
 
     <main class="article-body-container">
         <div class="margiela-header">
-            <div>
-                <div class="who-is-pill">MODA</div>
-                <h1 class="main-article-title">Levi's alerta sobre <br> o impacto ambiental do consumo de roupas</h1>
-            </div>
+            <div class="who-is-pill">MODA</div>
+            <h1 class="main-article-title">Levi's alerta sobre <br> o impacto ambiental do consumo de roupas</h1>
+            
             <div class="top-intro-text">
                 A marca norte-americana Levi’s está se concentrando no tema da sustentabilidade em uma campanha global que inclui o jogador de futebol inglês Marcus Rashford juntamente com a modelo e designer brasileira Yeza Rabelo.
             </div>
@@ -150,7 +158,8 @@
                 Marcus Rashford, Yeza Rabelo e outros cinco ativistas aparecem tanto no comercial principal e em seus próprios filmes individuais. Dirigido por Leo Aguirre, da Stink Films, o comercial também traz o ator Jaden Smith, atual embaixador da Levi’s, que destaca que o consumo global de roupas dobrou nos últimos 15 anos. Apresenta ainda a “influenciadora” de moda norte-americana Emma Chamberlain e os ativistas Xiye Bastida, do México, Melati Wijsen, da Indonésia e Xiuhtezcatl Martinez, que vive no Colorado. O objetivo da Levi’s é encorajar os consumidores a pensar sobre a origem de suas roupas, convidando-os a usar itens por mais tempo, comprar em segunda mão ou usar alfaiates para estender a vida útil de uma peça. Paralelamente, a empresa tem optado por fibras como o cânhamo e o algodão orgânico nas suas confecções porque elas demandam menos água ao longo das diversas etapas de produção.
             </p>
             <p>
-               “Em última análise, o jeans da Levi’s foi feito para ser usado por gerações, não por temporadas. Portanto, estamos usando essa campanha para incentivar os consumidores a serem mais criteriosos em suas escolhas de vestuário. Como uma empresa que celebrou os pioneiros e aspirou trazer soluções ambientais inovadoras para mercado, vimos nossa voz nesses jovens líderes. A mudança virá se todos trabalharmos juntos na redução de nosso impacto coletivo no planeta“, comenta Jennifer Sey, presidente da marca Levi’s. 
+                “Em última análise, o jeans da Levi’s foi feito para ser usado por gerações, não por temporadas. Portanto, estamos usando essa campanha para incentivar os consumidores a serem mais criteriosos em suas escolhas de vestuário. Como uma empresa que celebrou os pioneiros e aspirou trazer soluções ambientais inovadoras para mercado, vimos nossa voz nesses jovens líderes. A mudança virá se todos trabalharmos juntos na redução de nosso impacto coletivo no planeta“, comenta Jennifer Sey, presidente da marca Levi’s. 
+            </p>
         </article>
     </main>
 
