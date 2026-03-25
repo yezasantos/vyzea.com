@@ -11,9 +11,14 @@ function trocarImagem(nomeArquivo) {
         imagemPrincipal.style.opacity = 1;
     }, 250); // Tempo da piscada em milissegundos
 }
-function toggleMenu() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function carregarMenu() {
+    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('menu-container').innerHTML = data;
+        });
 }
+window.onload = carregarMenu;
 
 // Fecha o dropdown se o usuário clicar fora dele
 window.onclick = function(event) {
