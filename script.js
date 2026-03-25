@@ -12,7 +12,7 @@ function trocarImagem(nomeArquivo) {
     }, 250); // Tempo da piscada em milissegundos
 }
 function carregarMenu() {
-    fetch('menu.html')
+    fetch('index.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('menu-container').innerHTML = data;
