@@ -210,46 +210,61 @@ body, html {
     line-height: 1.8;
 }
 
-/* Posicionamento do container */
+/* Container do Menu */
 .menu-dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Estilo da caixa que contém os links */
+/* Esconde as categorias inicialmente */
 .dropdown-content {
-    display: none; /* Escondido por padrão */
+    display: block;
     position: absolute;
-    right: 0;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1000;
-    padding: 12px 0;
+    right: 0; /* Alinha à direita do botão */
+    top: 100%; /* Aparece logo abaixo */
+    background-color: #fff;
+    min-width: 180px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.05); /* Sombra bem leve */
+    z-index: 999;
+    
+    /* Efeito de suavidade */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    
+    border: 1px solid #f0f0f0;
+    padding: 10px 0;
 }
 
 /* Estilo dos links dentro do menu */
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    color: #000;
+    padding: 12px 20px;
     text-decoration: none;
     display: block;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    transition: background 0.2s;
 }
 
+/* Hover nos links internos */
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #f9f9f9;
 }
 
-/* Classe que o JavaScript vai adicionar para mostrar o menu */
-.show {
-    display: block;
-    animation: fadeIn 0.3s ease;
+/* O "Pulo do Gato": Quando o mouse está no container, mostra o menu */
+.menu-dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
+/* Garante que o botão não tenha fundo estranho */
+.menu-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
