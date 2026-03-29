@@ -268,3 +268,7 @@ body, html {
     border: none;
     cursor: pointer;
 }
+
+#main-img, #vertical-img, .first-part, .second-part, .body-text {
+    transition: opacity 0.3s ease-in-out;
+}
