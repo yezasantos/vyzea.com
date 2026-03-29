@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VYZEA &middot; IVizualize o mundo diferente</title>
+    <title>VYZEA &middot; Visualize o mundo diferente</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <div class="site-container">
+<div class="site-container">
     <header class="site-header">
         <div class="header-inner">
             <p class="brand">VYZEA</p>
@@ -23,59 +23,66 @@
                 <a href="#">CONTATO</a>
             </nav>
             <div class="menu-dropdown">
-    <button class="menu-icon">
-        <svg width="40" height="25" viewBox="0 0 20 12" fill="none">
-            <rect width="20" height="2" fill="black"/><rect y="5" width="20" height="2" fill="black"/><rect y="10" width="20" height="2" fill="black"/>
-        </svg>
-    </button>
-    <div class="dropdown-content">
-        <a href="#">INÍCIO</a>
-        <a href="#">CULTURA</a>
-        <a href="#">MODA</a>
-        <a href="#">MÚSICA</a>
-    </div>
-</div>
+                <button class="menu-icon">
+                    <svg width="40" height="25" viewBox="0 0 20 12" fill="none">
+                        <rect width="20" height="2" fill="black"/><rect y="5" width="20" height="2" fill="black"/><rect y="10" width="20" height="2" fill="black"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">INÍCIO</a>
+                    <a href="#">CULTURA</a>
+                    <a href="#">MODA</a>
+                    <a href="#">MÚSICA</a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main class="editorial-content" id="main-content">
-       <section class="visual-column">
-    <div class="hero-image-container">
-    <a href="materia.html">
-        <img id="main-img" src="capa.png" alt="Capa Principal" class="hero-image">
-    </a>
-</div>
-    
-    <div class="visual-controls">
-        <div class="visual-line"></div>
-        <div class="thumbnails">
-            <img src="thumb1.png" alt="Miniatura 1" onclick="trocarImagem('capa.png')">
-            <img src="thumb2.png" alt="Miniatura 2" onclick="trocarImagem('thumb2.png')">
-            <img src="thumb3.jpg" alt="Miniatura 3" onclick="trocarImagem('thumb3.jpg')">
-        </div>
-    </div>
-</section>
-
-<script src="script.js"></script>
+        <section class="visual-column">
+            <div class="hero-image-container">
+                <a href="materia.html">
+                    <img id="main-img" src="capa.png" alt="Capa Principal" class="hero-image">
+                </a>
+            </div>
             
-            <section class="text-column">
-                <div class="editorial-titles">
-    <a href="materia.html" style="text-decoration: none; color: inherit;">
-        <h2><span class="first-part">Levi's alerta sobre o</span> <span class="second-part">o impacto ambiental do consumo de roupas</span></h2>
-    </a>
-</div>
-                
-                <div class="featured-detail">
-                    <img src="vertical.png" alt="Detalhe da cadeira vertical">
+            <div class="visual-controls">
+                <div class="visual-line"></div>
+                <div class="thumbnails">
+                    <img src="thumb1.png" alt="Met Gala 2023" style="cursor: pointer;"
+                         onclick="trocarConteudo('capa2.png', 'Met Gala 2023: veja looks e tendências', 'que marcaram o Oscar da moda', 'O tapete vermelho agitou a noite com produções em homenagem ao saudoso estilista Karl Largerfeld.', 'vertical2.png')">
+                    
+                    <img src="thumb2.png" alt="Victoria\'s Secret" style="cursor: pointer;"
+                         onclick="trocarConteudo('capa3.png', 'Victoria\'s Secret Fashion Show', 'anuncia volta com novidades', 'Agora a diversidade deve tomar conta das passarelas levando um tom de realidade mais necessário.', 'vertical3.png')">
+                    
+                    <img src="thumb3.jpg" alt="MÚSICA" style="cursor: pointer;"
+                         onclick="trocarConteudo('thumb3.jpg', '6 álbuns pra quem quer', 'conhecer o R&B contemporâneo', 'O R&B é um estilo clássico que já passou por inúmeras transformações desde que esse termo de fato foi oficializado, na década de 40, ao substituir o que chamavam de Race Music.', 'vertical4.png')">
                 </div>
+            </div>
+        </section>
 
-                <div class="editorial-text-content">
-                    <p class="body-text">A marca norte-americana Levi’s está se concentrando no tema da sustentabilidade em uma campanha global que inclui o jogador de futebol inglês Marcus Rashford juntamente com a modelo e designer brasileira Yeza Rabelo.</p>
+        <script src="script.js"></script>
             
-            </section>
-            
-        </main>
-        
-    </div>
+        <section class="text-column">
+            <div class="editorial-titles">
+                <a href="materia.html" style="text-decoration: none; color: inherit;">
+                    <h2>
+                        <span class="first-part">Levi's alerta sobre o</span> 
+                        <span class="second-part">o impacto ambiental do consumo de roupas</span>
+                    </h2>
+                </a>
+            </div>
+                
+            <div class="featured-detail">
+                <img id="vertical-img" src="vertical.png" alt="Detalhe Vertical">
+            </div>
+
+            <div class="editorial-text-content">
+                <p class="body-text">A marca norte-americana Levi’s está se concentrando no tema da sustentabilidade em uma campanha global que inclui o jogador de futebol inglês Marcus Rashford juntamente com a modelo e designer brasileira Yeza Rabelo.</p>
+            </div>
+        </section>
+    </main>
+</div>
 
 </body>
-</html> 
+</html>
