@@ -1,26 +1,56 @@
-function trocarImagem(nomeArquivo) {
+/**
+ * Função para trocar todo o conteúdo editorial (Imagens e Textos)
+ * Ordem dos parâmetros: Foto Capa, Título Parte 1, Título Parte 2, Texto, Foto Vertical
+ */
+function trocarConteudo(nomeArquivo, titulo1, titulo2, novoTexto, nomeArquivoVertical) {
     const imagemPrincipal = document.getElementById('main-img');
-    
-    // Adiciona um efeito de fade out (opcional, requer o CSS abaixo)
-    imagemPrincipal.style.opacity = 0;
+    const imagemVertical = document.getElementById('vertical-img');
+    const span1 = document.querySelector('.first-part');
+    const span2 = document.querySelector('.second-part');
+    const paragrafo = document.querySelector('.body-text');
+
+    // Agrupamos os elementos que vão sofrer o efeito de fade
+    const elementos = [imagemPrincipal, imagemVertical, span1, span2, paragrafo];
+
+    // 1. Inicia o Fade Out (fica invisível)
+    elementos.forEach(el => {
+        if (el) el.style.opacity = 0;
+    });
 
     setTimeout(() => {
-        // Troca o caminho da imagem
-        imagemPrincipal.src = nomeArquivo;
-        // Volta a opacidade
-        imagemPrincipal.style.opacity = 1;
-    }, 250); // Tempo da piscada em milissegundos
-}
-function carregarMenu() {
-    fetch('index.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('menu-container').innerHTML = data;
+        // 2. Troca os conteúdos durante a "piscada"
+        if (imagemPrincipal) imagemPrincipal.src = nomeArquivo;
+        if (imagemVertical) imagemVertical.src = nomeArquivoVertical;
+        if (span1) span1.innerText = titulo1;
+        if (span2) span2.innerText = titulo2;
+        if (paragrafo) paragrafo.innerText = novoTexto;
+
+        // 3. Volta a opacidade (Fade In)
+        elementos.forEach(el => {
+            if (el) el.style.opacity = 1;
         });
+    }, 250); // Tempo da transição
 }
+
+/**
+ * Função para carregar o menu (Mantida conforme seu original)
+ */
+function carregarMenu() {
+    const menuContainer = document.getElementById('menu-container');
+    if (menuContainer) {
+        fetch('index.html')
+            .then(response => response.text())
+            .then(data => {
+                menuContainer.innerHTML = data;
+            });
+    }
+}
+
 window.onload = carregarMenu;
 
-// Fecha o dropdown se o usuário clicar fora dele
+/**
+ * Lógica para fechar o dropdown (Mantida conforme seu original)
+ */
 window.onclick = function(event) {
     if (!event.target.matches('.menu-icon') && !event.target.closest('.menu-icon')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
