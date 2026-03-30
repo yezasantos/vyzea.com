@@ -1,1 +1,183 @@
+<div id="menu-container"></div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VYZEA &middot; LEVI'S</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* Estilos específicos baseados na referência Margiela */
+        .article-body-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 120px 40px;
+            font-family: 'Montserrat', sans-serif;
+        }
 
+        .margiela-header {
+            /* Mudança: Removido o Flexbox para que os elementos empilhem verticalmente */
+            display: block; 
+            margin-bottom: 50px;
+        }
+
+        .who-is-pill {
+            border: 1px solid #000;
+            border-radius: 50px;
+            padding: 5px 25px;
+            font-size: 1.5rem;
+            font-weight: 300;
+            display: inline-block;
+            /* Mudança: Aumentado o espaçamento para dar respiro ao título */
+            margin-bottom: 25px; 
+            text-transform: uppercase;
+        }
+
+        .main-article-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 0.95;
+            margin: 0;
+            text-transform: uppercase;
+            max-width: 900px;
+        }
+
+        .top-intro-text {
+            /* Mudança: Ajustado para ficar abaixo do título com espaçamento */
+            margin-top: 25px; 
+            max-width: 650px; /* Um pouco mais largo para acomodar a nova posição */
+            font-size: 0.9rem;
+            line-height: 1.5;
+            text-align: justify;
+            color: #333;
+        }
+
+        /* Moldura da Imagem Principal */
+        .hero-frame {
+            width: 100%;
+            height: 500px; /* Aumentado levemente para destacar o rosto */
+            overflow: hidden;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            margin-bottom: 15px;
+        }
+
+        .hero-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Mudança: Removido o grayscale para ficar colorida */
+            filter: none; 
+            /* Mudança: Ajustado para focar na altura do rosto (top/20%) */
+            object-position: center 20%; 
+        }
+
+        /* Meta dados (Sede/Colaboradores) */
+        .article-metadata {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+        }
+
+        .meta-group span { color: #888; display: block; margin-bottom: 2px; }
+
+        .divider-line { border: 0; border-top: 1px solid #eee; margin-bottom: 40px; }
+
+        /* Texto da Matéria */
+        .main-text-content {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: justify;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .bold-intro { font-weight: 800; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <p class="brand">VYZEA</p>
+            <nav class="nav-links">
+                <a href="index.html">VOLTAR</a>
+                <a href="#">QUEM SOMOS</a>
+                <a href="#">VOZES</a>
+                <a href="#">CONTATO</a>
+            </nav>
+            <button class="menu-icon">
+                <svg width="40" height="25" viewBox="0 0 20 12" fill="none"><rect width="20" height="2" fill="black"/><rect y="5" width="20" height="2" fill="black"/><rect y="10" width="20" height="2" fill="black"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="article-body-container">
+        <div class="margiela-header">
+            <div class="who-is-pill">MODA</div>
+            <h1 class="main-article-title">Victoria's Secret Fashion Show <br> anuncia volta com novidades</h1>
+            
+            <div class="top-intro-text">
+                Agora a diversidade deve tomar conta das passarelas levando um tom de realidade necessário.
+            </div>
+        </div>
+
+        <div class="hero-frame">
+            <img src="capa2.png" alt="Impacto Ambiental">
+        </div>
+
+        <div class="article-metadata">
+            <div class="meta-group">
+                <span>Sede:</span>
+                <strong>RIO DE JANEIRO</strong>
+            </div>
+            <div class="meta-group">
+                <span>Colaboradores:</span>
+                <strong>YEZA RABELO</strong>
+            </div>
+        </div>
+
+        <hr class="divider-line">
+
+        <article class="main-text-content">
+            <p class="bold-intro">
+                Após um hiato de quatro anos devido a polêmica quanto a falta de diversidade do seu casting, o Victoria's Secret Fashion Show está de volta. Responsável por lançar ao estrelato grandes modelos que se tornaram símbolos, o evento sentiu seu poder esvaindo - ainda mais se somado ao fato de que as audiências da televisão caíram drasticamente, assim como a venda de lingeries, não só no mercado norte-americano.
+            </p>
+            <p>
+                O que se espera é que a nova versão do clássico show de 42 minutos apresente novos corpos e etnias, que antes eram preteridas na apresentação. Agora a diversidade deve tomar conta das passarelas levando um tom de realidade necessário.
+            </p>
+            <p>
+                Para os leigos, Victoria's Secret é uma marca de lingerie e produtos de beleza fundada em 1977 por Roy Raymond com a sede em Ohio, Estados Unidos. A empresa recebeu esse nome porque seu criador era admirador da rainha Vitória, e como forma de homenageá-la, nomeou a grife dessa forma. A Victoria's Secret é considerada a grife de lingeries mais famosa do mundo e, em 2007, se tornou a primeira firma a ganhar uma estrela na Calçada da Fama de Hollywood
+
+A marca tem mais de mil lojas só nos Estados Unidos e a maioria encontra-se em centros comerciais. As primeiras lojas fora de seu país de origem foram abertas em 2010, nas cidades de Edmonton e Toronto, respectivamente em Agosto e Setembro, ambas no Canadá.
+            </p>
+            <p>
+                Anualmente, desde 1995, geralmente nas últimas semanas de novembro e dezembro, é realizado o Victoria's Secret Show, um desfile de moda que, desde 2001, é transmitido por televisão e conta com a presença de cantores, atores, críticos da moda e as modelas da grife, as quais apresentam a coleção do ano onde é exibido oficialmente o Fantasy Bra.
+            </p>
+            <p>
+                A grife conta com leque diversificado de modelos, das quais podem distinguir dois grupos: Bombshsells e Angels. 
+            </p>
+        </article>
+    </main>
+
+</body>
+</html>
+ <div class="menu-dropdown">
+    <button class="menu-icon" onclick="toggleMenu()">
+        <svg width="40" height="25" viewBox="0 0 20 12" fill="none">
+            <rect width="20" height="2" fill="black"/><rect y="5" width="20" height="2" fill="black"/><rect y="10" width="20" height="2" fill="black"/>
+        </svg>
+    </button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">INÍCIO</a>
+        <a href="cultura.html">CULTURA</a>
+        <a href="moda.html">MODA</a>
+        <a href="musica.html">MÚSICA</a>
+    </div>
+</div>
